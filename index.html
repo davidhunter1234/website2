@@ -1,0 +1,146 @@
+<html>
+    <header>
+        <title>Spacerift</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <link rel="stylesheet" href="base.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.3/dist/locomotive-scroll.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/emergence.js@1.1.2/src/emergence.min.js"></script>
+        
+    </header>
+
+    <body>
+
+        <div data-scroll-container>
+            <div class="loadingbar"></div>
+
+            <div class="grid1">
+                <div class="grid-item">
+                    <div class="frame">
+                        <div id="navblock">
+                            <div class="nav" style="left:5%; float:left;">DAVID NGUYEN</div>
+                            <div class="nav" style="right:5%;float:right; word-spacing: 10px;"><a href="projects.html">PROJECTS</a> <a href="work.html">WORK</a> <a href="#connect">CONTACT</a></div>
+                        </div>
+                        <div id="titleblock">
+                        <div id="title">SPACERIFT</div>
+                        </div>
+                        <div id="snipbitblock">
+                            <div id="snipbit">
+                                First Year <br> Computer Engineer <br> <div style="color:rgb(206, 204, 204);font-family:NowR;font-size:1.5vw;margin-top:0.7vw;line-height:2vw;">Fascinated in transportation technology<br>& everything amazing</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid2">
+                <div class="block1">
+                    <div id="astro"></div>
+                    <div class="bigtitle"><span>RAMPANT SPREE</span><br>
+                        <div style="font-family:dejavusans; font-size:3vw; letter-spacing: -0.1vw;line-height:4.5vw;">
+                            Exploration into New <br>Spaces
+
+                        <div style="margin-top:1.1vw;font-family:crimsonitalic; font-size:1.6vw; width:38%; line-height:3.1vw; letter-spacing: 0vw;">Hi, I'm David. Born and raised in Boston, Massachusetts, I love constantly venturing into new environments and adapting to reach the top. As an avid user of today's scientific discoveries and advancements, I am driven to make the world a more technological and happy place.   </div>
+                            
+                        </div>
+                    
+                    </div>
+
+                </div>
+                <div class="block2">
+                    <div id="circuit"></div>
+                    <div id="wordblock">
+                    <div id="bigtitle2" class="element1" data-emergence="hidden" > <a id="t2a" href="projects.html">PRO<br>JEC<br><div style="line-height:12.8vw;">TS</div></div></a>
+                    </div>
+                </div>
+
+                <div class="block3">
+                    <div id="workimg"  data-emergence="hidden"></div>
+                    <div id="bigtitle3block">
+                        <div id="bigtitle3" class="element2" data-emergence="hidden"><a id="t2a" href="work.html">
+                            WO<br>
+                            <div style="letter-spacing:5.5vw;margin-left:5%;">RK</div>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact">
+                    <div id="bigtitle4">CO<br>N-</div>
+                    <div id="bigtitle5">TA<br>CT</div>
+                    <div id="connect"></div>
+                    <div id="info">
+                        <div style='font-size:1.5vw; color:black;'>
+                            <i class="material-icons">email</i>nguyd6@gmail.com
+                        </div> 
+                        <br><br><br><br><br>
+                        Designed and developed by David Nguyen.<br>@2021 All rights reserved. 
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+
+    <script>
+        $(document).ready(function(){
+            $(".loadingbar").toggleClass("done");
+            $(".grid-item").toggleClass("fullscreen");
+            $(".nav").addClass("down");
+            disableScroll();
+            setTimeout(alertFunc, 7000);
+            setTimeout(alertFunc2, 6000);
+            setTimeout(enableScroll, 6000);
+        });
+
+        function alertFunc() {
+            $(".grid-item.fullscreen").addClass("notransition");
+        }
+        function alertFunc2() {
+            $("#title").addClass("up");
+            $(".nav").removeClass("down");
+            $(".nav").addClass("up");
+            $("#snipbit").addClass("up");
+        }
+        function disableScroll() {
+            document.body.classList.add("stop-scrolling");
+        }
+  
+        function enableScroll() {
+            document.body.classList.remove("stop-scrolling");
+        }
+    </script>
+    <!--
+    <script src="index.js"></script> -->
+    <script>
+        emergence.init({
+        container: window,
+        reset: true,
+        handheld: true,
+        throttle: 250,
+        elemCushion: .25,
+        offsetTop: 0,
+        offsetRight: 0,
+        offsetBottom: 0,
+        offsetLeft: 0,
+        callback: function(element, state) {
+            if (state === 'visible') {
+            console.log('Element is visible.');
+            } else if (state === 'reset') {
+            console.log('Element is hidden with reset.');
+            } else if (state === 'noreset') {
+            console.log('Element is hidden with NO reset.');
+            }
+        }
+        });
+    </script>
+    
+    
+    
+    
+    
+</html>
