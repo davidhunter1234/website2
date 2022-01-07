@@ -272,30 +272,30 @@ a:visited {
 
 @-webkit-keyframes marvelbook {
 	0%  {background-image:url(images/digitalfall.jpg)}
-	8%  {background-image:url(images/digitallandscape.jpg)}
+	8%  {background-image:url(images/digitallandscape.jpeg)}
 	16%  {background-image:url(images/digitalcity.jpg)}
 	24%  {background-image:url(images/highway.jpeg)}
 	32%  {background-image:url(images/ocean.jpeg)}
 	40%  {background-image:url(images/oceanwash.jpeg)}
 	48%  {background-image:url(images/shoretown.jpg)}
-	56%  {background-image:url(images/nomansky.jpg)}
+	56%  {background-image:url(images/nomansky.jpeg)}
 	64%  {background-image:url(images/digitalvoid.jpg)}
-	72%  {background-image:url(images/worldtree.JPG)}
-	100% {background-image:url(images/worldtree.JPG)}
+	72%  {background-image:url(images/worldtree.jpeg)}
+	100% {background-image:url(images/worldtree.jpeg)}
 }
 
 @keyframes marvelbook {
 	0%  {background-image:url(images/digitalfall.jpg)}
-	8%  {background-image:url(images/digitallandscape.jpg)}
+	8%  {background-image:url(images/digitallandscape.jpeg)}
 	16%  {background-image:url(images/digitalcity.jpg)}
 	24%  {background-image:url(images/highway.jpeg)}
 	32%  {background-image:url(images/ocean.jpeg)}
 	40%  {background-image:url(images/oceanwash.jpeg)}
 	48%  {background-image:url(images/shoretown.jpg)}
-	56%  {background-image:url(images/nomansky.jpg)}
+	56%  {background-image:url(images/nomansky.jpeg)}
 	64%  {background-image:url(images/digitalvoid.jpg)}
-	72%  {background-image:url(images/worldtree.JPG)}
-	100% {background-image:url(images/worldtree.JPG)}
+	72%  {background-image:url(images/worldtree.jpeg)}
+	100% {background-image:url(images/worldtree.jpeg)}
 }
 
 body {
